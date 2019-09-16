@@ -9,9 +9,15 @@ In the present repository, we offer code that allows to perform parallel trainin
 If you find this work useful and / or use it in your own research, please cite our works:
 
 ```
-Rabault, J., Kuhnle, A (2019). Accelerating Deep Reinforcement Leaning strategies of Flow Control through a multi-environment approach. Physics of Fluids.
+Rabault, J., Kuhnle, A (2019).
+Accelerating Deep Reinforcement Leaning strategies of Flow Control through a
+multi-environment approach.
+Physics of Fluids.
 
-Rabault, J., Kuchta, M., Jensen, A., Réglade, U., & Cerardi, N. (2019). Artificial neural networks trained through deep reinforcement learning discover control strategies for active flow control. Journal of Fluid Mechanics, 865, 281-302. doi:10.1017/jfm.2019.62
+Rabault, J., Kuchta, M., Jensen, A., Réglade, U., & Cerardi, N. (2019).
+Artificial neural networks trained through deep reinforcement learning discover
+control strategies for active flow control.
+Journal of Fluid Mechanics, 865, 281-302. doi:10.1017/jfm.2019.62
 ```
 
 ## Getting started
