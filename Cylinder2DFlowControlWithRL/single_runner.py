@@ -14,7 +14,7 @@ deterministic = True
 
 network = [dict(type='dense', size=512), dict(type='dense', size=512)]
 
-saver_restore = dict(directory=os.getcwd() + "/saver_data/", load="best-model")
+saver_restore = dict(directory=os.getcwd() + "/saver_data/")
 
 agent = Agent.create(
     # Agent + Environment
