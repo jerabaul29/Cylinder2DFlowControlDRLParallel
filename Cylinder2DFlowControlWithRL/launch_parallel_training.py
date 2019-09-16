@@ -77,40 +77,8 @@ evaluation_folder = "env_" + str(number_servers - 1)
 sys.path.append(cwd + evaluation_folder)
 # out_drag_file = open("avg_drag.txt", "w")
 
-def evaluation_callback_1(r):
-    if(not os.path.exists(evaluation_folder + "/saved_models/output.csv")):
-        print("no output.csv file, check path\n")
-        sys.exit()
-    else:
-        with open(evaluation_folder + "/saved_models/output.csv", 'r') as csvfile:
-            data = csv.reader(csvfile, delimiter = ';')
-            for row in data:
-                lastrow = row
-            avg_drag = float(lastrow[1])
-
-#     drag = '%10.6f\n' % (avg_drag)
-#     out_drag_file.write(drag)
-
-    return avg_drag
-
-def evaluation_callback_2(r):
-    if(not os.path.exists(evaluation_folder + "/saved_models/debug.csv")):
-        print("no debug.csv file, check path\n")
-        sys.exit()
-    else:
-        debug_data = np.genfromtxt(evaluation_folder + "/saved_models/debug.csv", delimiter=";")
-        debug_data = debug_data[1:,1:]
-        avg_data = np.average(debug_data[-20:], axis=0)
-        avg_drag = avg_data[3]
-
-#     drag = '%10.6f\n' % (avg_drag)
-#     out_drag_file.write(drag)
-
-    return avg_drag
-
 runner.run(
     num_episodes=400, max_episode_timesteps=nb_actuations, sync_episodes=True,
-    evaluation_callback=evaluation_callback_2,  # ???
     save_best_agent=use_best_model
 )
 # out_drag_file.close()

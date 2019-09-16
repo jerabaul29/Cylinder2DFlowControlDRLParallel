@@ -1,4 +1,4 @@
-"""Resume and use the environment in the configuration version number 2.
+"""Resume and use the environment.
 """
 
 import sys
