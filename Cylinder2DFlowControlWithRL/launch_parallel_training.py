@@ -65,7 +65,7 @@ agent = Agent.create(
     entropy_regularization=0.01,
     # TensorFlow etc
     parallel_interactions=number_servers,
-    saver=dict(directory=os.path.join(os.getcwd(), 'saver_data'), seconds=72000),  # the high value of the seconds parameter here is so that no erase of best_model
+    saver=dict(directory=os.path.join(os.getcwd(), 'saver_data')),
 )
 
 runner = ParallelRunner(
