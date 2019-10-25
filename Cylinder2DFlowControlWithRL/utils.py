@@ -31,7 +31,8 @@ def check_ports_avail(host, list_ports, verbose=True):
 
 
 def bash_check_avail(first_port, n_ports):
-    host = socket.gethostname()
+    #host = socket.gethostname()
+    host = 'localhost'
     list_ports = [ind_server + first_port for ind_server in range(n_ports)]
 
     if check_ports_avail(host, list_ports, verbose=False):
