@@ -31,7 +31,9 @@ class RemoteEnvironmentServer(EchoServer):
         if host is None:
             host = socket.gethostname()
 
-        socket_instance.bind((host, port))
+        # socket_instance.bind((host, port))
+        # for a reason I cannot understand, need next line to be able to use forwarding between dockers
+        socket_instance.bind(('localhost', port))
 
         socket_instance.listen(1)  # Buffer only one request
 
