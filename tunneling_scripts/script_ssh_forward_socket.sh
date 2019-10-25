@@ -63,9 +63,9 @@ let lastPort=$2+$3
 for port in $(seq $2 1 $lastPort)
 do
     echo "launching redirection for port $port"
-    tmux send-keys -t 1 "echo launch redirection for port $port" C-m
-    tmux send-keys -t 1 "ssh -N -L $port:127.0.0.1:$port $4 &" C-m
-    tmux send-keys -t 1 "echo done" C-m
+    tmux send-keys -t $1 "echo launch redirection for port $port" C-m
+    tmux send-keys -t $1 "ssh -N -L $port:127.0.0.1:$port $4 &" C-m
+    tmux send-keys -t $1 "echo done" C-m
 done
 
 # NOTE:
