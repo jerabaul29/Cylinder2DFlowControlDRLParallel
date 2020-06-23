@@ -26,7 +26,13 @@ The main code is located in **Cylinder2DFlowControlWithRL**. There, the simulati
 
 The main script for launching trainings is the **script_launch_parallel.sh** script. It takes care of both launching simulation servers, and launching the parallel training. Launching the scripts takes a few minutes, be a bit patient with it :) .
 
-The recommended method of execution is with the docker container, provided at https://folk.uio.no/jeanra/Informatics/cylinder2dflowcontrol_Parallel_v1.tar (careful, this is several GB in size). This will make sure that all packages are available in the right versions.
+The recommended method of execution is with the docker container, provided in the ```container``` folder as a series of segments tracked with ```git-lfs```. This will make sure that all packages are available in the right versions. To re-create the container locally:
+
+```
+> cat cylinder2dflowcontrol_Parallel_v1.tar_part.?? > cylinder2dflowcontrol_Parallel_v1.tar
+> sha256sum cylinder2dflowcontrol_Parallel_v1.tar
+d33140ad84630c657177867646a8322261cb82fc052067484c52df578a868de7  cylinder2dflowcontrol_Parallel_v1.tar
+```
 
 Docker explanations are available in the **Docker** folder. See **README_container.md** for a simple, general introduction to docker. See the **Code_Location_use_docker_Fenics_Tensorforce_parallel.md** file for explanations on how to get the docker container, and run the code inside of it. Once you are familiar with how the code works, you should use the **script_launch_parallel.sh** to launch the servers and clients for you automatically.
 
