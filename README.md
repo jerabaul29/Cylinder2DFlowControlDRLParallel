@@ -34,6 +34,10 @@ The recommended method of execution is with the docker container, provided in th
 d33140ad84630c657177867646a8322261cb82fc052067484c52df578a868de7  cylinder2dflowcontrol_Parallel_v1.tar
 ```
 
+Remember to check your assembled container integrity with the checksum!
+
+**A note here**: while git-lfs should allow to download sucessfully all segments upon cloning the repository, it seems that some users have a problem, either with github serving the git-lfs files, or with git checking out the large files. If this is the case, to get all the fragments, you may have to use the github web GUI, i.e. to 1) go to the right folder (```https://github.com/jerabaul29/Cylinder2DFlowControlDRLParallel/tree/master/container```) 2) for each fragment there, to click on the filename and use the download button to start downloading directly from your browser.
+
 Docker explanations are available in the **Docker** folder. See **README_container.md** for a simple, general introduction to docker. See the **Code_Location_use_docker_Fenics_Tensorforce_parallel.md** file for explanations on how to get the docker container, and run the code inside of it. Once you are familiar with how the code works, you should use the **script_launch_parallel.sh** to launch the servers and clients for you automatically.
 
 If you encounter problems, please:
