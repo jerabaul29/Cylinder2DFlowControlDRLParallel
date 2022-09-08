@@ -54,3 +54,9 @@ If you encounter problems, please:
 ## CFD simulation fenics, and user-defined user cases
 
 For more details about the CFD simulation and how to build your own user-defined cases, please consult the Readme of the JFM code, availalbe at https://github.com/jerabaul29/Cylinder2DFlowControlDRL.
+
+## Video of the lecture at IFAIME: learning about DRL for flow control
+
+I was recently invited to give a guest lecture about DRL for flow control at IFAIME; the recording is available at: https://www.youtube.com/watch?v=SfbajZPvGoM .
+
+[![IFAIME guest lecture: DRL for flow control](https://github.com/jerabaul29/Cylinder2DFlowControlDRL/blob/master/assets/image_ifaime_youtube_2.png)](https://www.youtube.com/watch?v=SfbajZPvGoM)
