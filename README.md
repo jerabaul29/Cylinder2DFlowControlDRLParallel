@@ -55,8 +55,8 @@ If you encounter problems, please:
 
 For more details about the CFD simulation and how to build your own user-defined cases, please consult the Readme of the JFM code, availalbe at https://github.com/jerabaul29/Cylinder2DFlowControlDRL.
 
-## Video of the lecture at IFAIME: learning about DRL for flow control
+## Video of the lecture at AFMS
 
-I was recently invited to give a guest lecture about DRL for flow control at IFAIME; the recording is available at: https://www.youtube.com/watch?v=SfbajZPvGoM .
+I was recently invited to give a guest lecture about DRL for flow control at AFMS; the recording is available at: https://youtu.be/irNheFmWZTo .
 
-[![IFAIME guest lecture: DRL for flow control](https://github.com/jerabaul29/Cylinder2DFlowControlDRL/blob/master/assets/image_ifaime_youtube_2.png)](https://www.youtube.com/watch?v=SfbajZPvGoM)
+You can find the corresponding slides at: https://github.com/jerabaul29/2023_slides_DeepReinforcementLearning_ActiveFlowControl_AFMS/blob/main/slides_2023_03_01_RABAULT_DRL_active_flow_control.pdf .
